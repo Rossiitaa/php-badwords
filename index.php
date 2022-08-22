@@ -1,6 +1,6 @@
 <?php
     $text = "The peppers are very good, do you want some too?";
-    $badWords = $_GET["filter"];
+    $badWords = $_GET["censored"];
     $censoredText = str_replace($badWords, "***", $text);
 ?>
 
@@ -23,6 +23,8 @@
 <!-- censura -->
     <p>
         <?php
+            echo $censoredText;
+            echo strlen($censoredText);
         ?>
     </p>
 </body>
