@@ -1,3 +1,9 @@
+<?php
+    $text = "The peppers are very good, do you want some too?";
+    $badWords = $_GET["filter"];
+    $censoredText = str_replace($badWords, "***", $text);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +15,14 @@
 <body>
     <p>
         <?php
-            $paragraph = "The peppers are very good, do you want some too?";
-            echo $paragraph . ' sono lungo ' . strlen($paragraph) . ' caratteri';
+            echo $text;
+            echo strlen($text);
+        ?>
+    </p>
+
+<!-- censura -->
+    <p>
+        <?php
         ?>
     </p>
 </body>
