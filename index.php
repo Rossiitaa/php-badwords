@@ -10,7 +10,7 @@
     <p>
         <?php
             $paragraph = "The peppers are very good, do you want some too?";
-            echo $paragraph;
+            echo $paragraph . ' sono lungo ' . strlen($paragraph) . ' caratteri';
         ?>
     </p>
 </body>
